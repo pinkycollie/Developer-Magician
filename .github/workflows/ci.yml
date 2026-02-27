@@ -21,7 +21,7 @@ jobs:
       contents: read
     steps:
       - name: 🎯 Learning Checkpoint - Repository Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         
       - name: 💡 Educational Toast - Why We Check Out Code
         run: |
@@ -48,7 +48,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       
       - name: 📦 Setup Node.js Environment
         uses: actions/setup-node@v4
@@ -123,7 +123,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       
       - name: 🐍 Setup Python Environment
         uses: actions/setup-python@v6
@@ -183,7 +183,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       
       - name: 📦 Setup Node.js
         uses: actions/setup-node@v4

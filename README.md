@@ -44,7 +44,7 @@ The Accessibility Validator is a core service within PinkSync that ensures all i
 
 ```bash
 # Clone the repository
-git clone https://github.com/pinkycollie/accessibility-validator.git
+git clone https://github.com/pinkycollie/developer-magician.git
 cd accessibility-validator
 
 # Run automated setup script
@@ -468,10 +468,10 @@ MIT License - Feel free to use for your projects
 
 ## 🔗 Part of MBTQ Ecosystem
 
-- **Main Universe**: [mbtquniverse.com](https://mbtquniverse.com)
+- **Main**: [mbtq.dev](https://mbtq.dev)
 - **DeafAUTH**: Identity and authentication for Deaf users
 - **Fibonrose**: Trust and reputation system
-- **360Magicians**: AI-powered automation agents
+- **MagicianCore**: Vendors, Providers, Agente
 - **PinkSync**: Accessibility and automation nervous system
 
 -----

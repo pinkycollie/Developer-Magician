@@ -1,8 +1,8 @@
 version: 2
 updates:
-  # Enable version updates for npm (Node.js/Next.js dependencies)
-  - package-ecosystem: "npm"
-    directory: "/"
+  # 1. Front-End Web Dashboard (pnpm Monorepo Layer)
+  - package-ecosystem: "pnpm"
+    directory: "/apps/web-dashboard"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -10,35 +10,52 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - "dependencies"
-      - "javascript"
+      - "pnpm"
+      - "frontend"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore(deps-web)"
       include: "scope"
     ignore:
-      # Ignore major version updates for stable production
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
 
-  # Enable version updates for pip (Python/FastAPI dependencies)
-  - package-ecosystem: "pip"
-    directory: "/"
+  # 2. Open Edge Node Agent Package (pnpm/npm Monorepo Layer)
+  - package-ecosystem: "npm"
+    directory: "/packages/node-agent"
     schedule:
       interval: "weekly"
       day: "monday"
       time: "02:00"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "node-agent"
+    commit-message:
+      prefix: "chore(deps-agent)"
+      include: "scope"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  # 3. Python Automation/Data Tools (pip Background Layer)
+  - package-ecosystem: "pip"
+    directory: "/" # Scans requirements.txt or pyproject.toml at root
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "02:00"
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
       - "python"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore(deps-python)"
       include: "scope"
     ignore:
-      # Ignore major version updates for stable production
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
 
-  # Enable version updates for GitHub Actions
+  # 4. GitHub Actions Workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -50,5 +67,5 @@ updates:
       - "dependencies"
       - "github-actions"
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "chore(deps-infra)"
       include: "scope"

@@ -1,4 +1,4 @@
 fastapi==0.136.1
 uvicorn[standard]==0.47.0
 python-magic>=0.4.27
-pytest>=9.0.3
+pytest>=9.1.0

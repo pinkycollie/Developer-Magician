@@ -8,7 +8,7 @@ on:
 
 jobs:
   playwright-tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         browser: [chromium, firefox, webkit]

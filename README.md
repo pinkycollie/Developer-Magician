@@ -1,4 +1,4 @@
-# Developer-Magician - PinkSync Accessibility Project Management
+# Accessibility-Validator - PinkSync Accessibility Project Management
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/pinkycollie/Developer-Magician)
@@ -6,18 +6,19 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python)](https://www.python.org/)
+[![Auto-fix Code Issues](https://github.com/pinkycollie/Developer-Magician/actions/workflows/auto-fix.yml/badge.svg)](https://github.com/pinkycollie/Developer-Magician/actions/workflows/auto-fix.yml)
 
 **Part of the MBTQ Ecosystem - Deaf-First Accessibility Automation**
 
 The Developer-Magician is a core service within PinkSync that ensures all interfaces prioritize ASL flow and bypass audio-only UX. This service validates websites and applications for Deaf-first accessibility, going beyond standard WCAG compliance to focus on visual UI and sign language navigation patterns.
 
-## 🎯 Purpose in MBTQ Ecosystem
+## 🎯 Purpose in AI Ecosystem
 
 - **PinkSync Role**: Acts as the “nervous system” executor for accessibility validation
 - **DeafAUTH Integration**: Validates identity flows work for Deaf users
 - **Fibonrose Logging**: Reports accessibility scores to trust/reputation system
 - **360Magicians Compatible**: AI agents can trigger validation tasks
-- **DAO Governed**: Validation standards controlled by mbtquniverse.com governance
+- **DAO Governed**: Validation standards controlled by open source governance
 
 ## 🚀 Quick Deploy
 
@@ -443,19 +444,14 @@ This service is part of the 360 Magicians and follows Deaf-first development pri
 1. **Visual-First Development**: All UI changes must prioritize visual communication
 1. **ASL Logic**: Consider sign language navigation patterns
 1. **Community Validation**: Changes reviewed by Deaf community members
-1. **Ecosystem Integration**: Maintain compatibility with other MBTQ services
+1. **Ecosystem Integration**: Maintain compatibility with other services
 
 ## 📄 License
 
 MIT License - 360 Magicians
 
-## 🔗 MBTQ Ecosystem Links
+## 🔗 Developer Magician Link
 
-- **Main Universe**: [mbtquniverse.com](https://mbtquniverse.com)
-- **DeafAUTH**: Identity and authentication for Deaf users
-- **Fibonrose**: Trust and reputation system
-- **360Magicians**: AI-powered automation agents
-- **PinkSync**: Accessibility and automation nervous system
 
 -----
 

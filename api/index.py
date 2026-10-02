@@ -7,7 +7,7 @@ from enum import Enum
 
 ### Create FastAPI instance with custom docs and openapi url
 app = FastAPI(
-    title="PinkSync Accessibility Validator - Developer Magician API",
+    title="Developer Magician API",
     description="Deaf-First Accessibility Automation with Educational Storytelling Workflows",
     version="2.0.0",
     docs_url="/api/py/docs",
@@ -462,7 +462,7 @@ async def learn_workflow_stage(stage: WorkflowStage) -> Dict[str, Any]:
             "title": "Deployment",
             "what_it_does": "Publishes your application to production servers",
             "why_important": "Makes your code available to users",
-            "platforms": ["Vercel", "AWS", "Google Cloud", "Azure"],
+            "platforms": [options]
             "common_issues": [
                 "Missing environment variables",
                 "Build timeouts",
@@ -630,7 +630,7 @@ async def create_workflow_toast(
 async def root():
     """Root API endpoint with navigation"""
     return {
-        "message": "Welcome to the PinkSync Developer Magician API!",
+        "message": "Welcome to the Developer Magician API!",
         "version": "2.0.0",
         "features": [
             "Storytelling Workflows",

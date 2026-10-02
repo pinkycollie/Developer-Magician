@@ -1,0 +1,3 @@
+❌ PR rejected if next/server or next/headers imported
+❌ PR rejected if any route handler found in app/api/
+❌ PR rejected if process.env used without NEXT_PUBLIC_ prefix

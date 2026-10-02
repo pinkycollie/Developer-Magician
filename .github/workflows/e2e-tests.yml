@@ -8,15 +8,26 @@ on:
 
 jobs:
   playwright-tests:
-    runs-on: ubuntu-latest
+    runs-on:
+      
     strategy:
       matrix:
         browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
+      - - name: Setup uv
+  # You may pin to the exact commit or the version.
+  # uses: yezz123/setup-uv@ab6be5a42627f19dc36e57b548592a5e52cece4a
+  uses: yezz123/setup-uv@v4.1
+  with:
+    # uv version to use. If not provided, the latest stable version will be used.
+    uv-version: # optional
+    # Virtual environment name to create and activate.
+    uv-venv: # optional
+    # Whether to cache uv packages. Only supported for uv versions >= 0.3.0.
+    uv-cache: # optional, default is false
+    # Directory to use for uv cache. If not specified, a platform-appropriate default will be used.
+    uv-cache-dir: # optional
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright
@@ -30,4 +41,4 @@ jobs:
           name: playwright-results-${{ matrix.browser }}
           path: playwright-report/
       - name: Run accessibility audit
-        run: npm run test:a11y
+        run: uv run test:a11y
